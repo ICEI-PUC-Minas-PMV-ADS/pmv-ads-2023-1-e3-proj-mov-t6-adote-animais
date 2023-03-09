@@ -18,3 +18,15 @@ Visando facilitar a adoção de animais de estimação e evitar o agravamento do
 ## Público-Alvo
 
 O público-alvo deste trabalho é composto por homens e mulheres entre 18 e 50 anos, que desejam adotar um animal de estimação e que estão dispostos a aprender sobre adoção responsável e bem-estar animal. Esse público pode ter diferentes níveis de experiência com animais de estimação, desde aqueles que são tutores de animais há anos, até aqueles que estão adotando um animal de estimação pela primeira vez. Essas pessoas têm um perfil ativo e estão dispostas a se comprometer com a causa do bem-estar animal, seja adotando um animal de estimação ou ajudando a divulgar informações sobre adoção responsável para outras pessoas. Elas valorizam o vínculo afetivo entre humanos e animais e acreditam que é possível criar um ambiente seguro e feliz para o animal adotado.
+
+## Histórias de usuários
+
+|  Eu como… |              ..desejo...              |                     ...para...                     |
+|:---------:|:-------------------------------------:|:--------------------------------------------------:|
+|   Débora  |      ter acesso a imagens do pet      |                 ver como o animal é                |
+|   Débora  |    conhecer a história dos animais    |                conhecer melhor o pet               |
+| Estephany |    conhecer sobre a saúde do animal   | ter um breve conhecimento de como devo cuidar dele |
+|   Josué   | conhecer sobre o estado mental do pet |        conhecer sobre o estado mental do pet       |
+|   Josué   | conhecer sobre o estado mental do pet |        conhecer sobre o estado mental do pet       |
+
+> [Gerador com a ajuda do](https://www.tablesgenerator.com/markdown_tables)
