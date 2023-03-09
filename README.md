@@ -6,18 +6,19 @@
 
 `3º Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Visando facilitar a adoção de animais de estimação e evitar o agravamento do quadro emocional dos pets, desenvolvemos este app.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Amanda Eufrasio
+* Gabriel Martins
+* Jéssica Serqueira
+* Marcus Vinicius
+* Rafael Nascimento
 
 ## Orientador
 
-* Nome completo do professor 1
+* Diego Silva Caldeira Rocha
 
 ## Instruções de utilização
 
