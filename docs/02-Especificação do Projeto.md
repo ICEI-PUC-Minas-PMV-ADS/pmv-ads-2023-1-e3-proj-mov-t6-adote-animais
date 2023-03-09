@@ -75,19 +75,19 @@ Encontram-se abaixo os requisitos que compõem o projeto
 
 ### Requisitos Funcionais
 
-**RF - 01** : A página principal vai contar com botões que levam às telas de cadastro e login. - ***ALTA***
+- **RF - 01** : A página principal vai contar com botões que levam às telas de cadastro e login. - ***ALTA***
 
-**RF - 02**  : Tela de cadastro onde usuários poderão se cadastrar. - ***ALTA***
+- **RF - 02**  : Tela de cadastro onde usuários poderão se cadastrar. - ***ALTA***
 
-**RF - 03** : Tela de login de usuários. - ***ALTA***
+- **RF - 03** : Tela de login de usuários. - ***ALTA***
 
-**RF - 04** : A página inicial do usuário vai mostrar os cards com os pets cadastrados para adoção. - ***ALTA***
+- **RF - 04** : A página inicial do usuário vai mostrar os cards com os pets cadastrados para adoção. - ***ALTA***
 
-**RF - 05** : Dentro dos cards vai ter as listas com as informações com os animais para adoção - ***MÉDIA***
+- **RF - 05** : Dentro dos cards vai ter as listas com as informações com os animais para adoção - ***MÉDIA***
 
-**RF - 06** : Os cadastros podem fazer edições em seus perfis. - ***MÉDIA***
+- **RF - 06** : Os cadastros podem fazer edições em seus perfis. - ***MÉDIA***
 
-**RF - 07** : Os cadastros podem fazer excluir seus perfis seus perfis. - ***MÉDIA***
+- **RF - 07** : Os cadastros podem fazer excluir seus perfis seus perfis. - ***MÉDIA***
 
 ### Requisitos não funcionais
 
