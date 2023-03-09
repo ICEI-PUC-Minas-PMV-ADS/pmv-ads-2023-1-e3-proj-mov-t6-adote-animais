@@ -71,36 +71,39 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+Encontram-se abaixo os requisitos que compõem o projeto
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+**RF - 01** : A página principal vai contar com botões que levam às telas de cadastro e login. - ***ALTA***
 
-### Requisitos não Funcionais
+**RF - 02**  : Tela de cadastro onde usuários poderão se cadastrar. - ***ALTA***
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+**RF - 03** : Tela de login de usuários. - ***ALTA***
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+**RF - 04** : A página inicial do usuário vai mostrar os cards com os pets cadastrados para adoção. - ***ALTA***
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+**RF - 05** : Dentro dos cards vai ter as listas com as informações com os animais para adoção - ***MÉDIA***
+
+**RF - 06** : Os cadastros podem fazer edições em seus perfis. - ***MÉDIA***
+
+**RF - 07** : Os cadastros podem fazer excluir seus perfis seus perfis. - ***MÉDIA***
+
+### Requisitos não funcionais
+
+- **RNF - 01** : A aplicação deve ser responsiva respeitando a maioria dos aparelhos - ***ALTA***
+
+- **RNF - 02** : O banco de dados deve ser armazenado dentro de um ambiente acessível publicamente na internet(Heroku ou AWS) - ***ALTA***
+
+- **RNF - 03** : O aplicativo deve ser compatível com os principais sistemas operacionais do mercado (android e IOS) - ***ALTA***
+
+- **RNF - 04** : O aplicativo deve ser compatível com os principais navegadores do mercado (Opera, Mozilla, Google Chrome, Firefox e Microsoft Edge) - ***ALTA***
+
+- **RNF - 05** : O aplicativo deve ter bom nível de contraste entre os elementos da tela em conformidade - MEDIA
+
+- **RNF - 06** : O aplicativo irá contar com autenticação de login para reforçar a segurança dentro da nossa plataforma - ***BAIXA***
+
+- **RNF - 07** : O aplicativo deve ser publicado em um ambiente acessível publicamente na internet como site(GitHub ou Heroku) - ***BAIXA***
 
 ## Restrições
 
