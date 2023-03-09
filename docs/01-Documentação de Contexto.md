@@ -1,46 +1,20 @@
-# Introdução
+# Contexto
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Atualmente com o uso da internet, nossas vidas mudaram de forma significativa com o advento das redes sociais, do mundo globalizado, da web 3.0, etc. O que muitas vezes não nos atentamos a respeito, é o quanto esses fatores mudaram na vida dos animais não humanos, principalmente nossos bichinhos de estimação. Apesar das mudanças na sociedade graças à tecnologia, alguns problemas, infelizmente, se mantêm tão atuais e constantes quanto sempre estiveram, o abandono de animais e/ou desabrigo dos mesmos, é algo que certamente presenciamos inúmeras vezes em nosso dia a dia. É nesse contexto, que ratificamos aqui, a importância do uso da tecnologia em prol da resolução desses problemas que permeiam a sociedade desde sempre.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Muito se fala sobre adoção responsável de animais domésticos, sendo esta a preparação dos tutores para receber o novo pet, nesse cenário entram preocupações como estrutura para receber o animal, tempo de adaptação, disponibilidade e vontade dos tutores para fazer essa transição da melhor forma possível.		Em alguns casos o período de adaptação pode ser imprevisível devido à personalidade do pet sendo adotado. Devido a situações difíceis já vivenciadas pelos pets, este pode ter desenvolvido sequelas emocionais muito fortes, o que dificulta na sua adaptação, e a falta de preparação dos tutores pode gerar uma desistência e devolver o animal, sendo está uma situação que pode agravar o estado emocional do pet.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- Auxiliar tutores à encontrar um pet que corresponda ao que ele deseja na hora da adoção;
+- Ajudar pets que precisam de um cuidado maior ao encontrar tutores dispostos a encarar o desafio que é a adoção.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Visando facilitar a adoção de animais de estimação e evitar o agravamento do quadro emocional dos pets, desenvolvemos este app.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O público-alvo deste trabalho é composto por homens e mulheres entre 18 e 50 anos, que desejam adotar um animal de estimação e que estão dispostos a aprender sobre adoção responsável e bem-estar animal. Esse público pode ter diferentes níveis de experiência com animais de estimação, desde aqueles que são tutores de animais há anos, até aqueles que estão adotando um animal de estimação pela primeira vez. Essas pessoas têm um perfil ativo e estão dispostas a se comprometer com a causa do bem-estar animal, seja adotando um animal de estimação ou ajudando a divulgar informações sobre adoção responsável para outras pessoas. Elas valorizam o vínculo afetivo entre humanos e animais e acreditam que é possível criar um ambiente seguro e feliz para o animal adotado.
