@@ -1,11 +1,19 @@
 # Plano de Testes de Usabilidade
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
+> Uma descrição mais aprofundada está inclusa na documentação oficial do Plano de Teste
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+Buscam quantificar, o quão fácil é para um sistema, ser utilizado pelos mais variados tipos de usuário. Podemos citar, por exemplo: EyeTracking, Clickstream e o SUS
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+- **System Usability Scale** ou **SUS** é um método de avaliação por investigação. Tem como características: questionário com 10 questões em escala likert, Método de cálculo da pontuação de forma normalizada, É cientificamente apurado e Não é longo
+
+- **Clickstream** ou **Sequência de Cliques** (também conhecido como **Rastro de Cliques**) é o registro da trajetória que um usuário de computador percorre ao clicar em algo numa página web ou aplicativo. Os dados são capturados por cookies e registrados num cliente ou servidor web
+
+- O **eye tracking** também conhecido como **rastreamento ocular**, ou **interação do olhar**, é uma tecnologia usada para identificar para onde a pessoa está olhando na tela do computador, tablet e notebook
+
+### Links importantes
+
+[SUS](https://brasil.uxdesign.cc/o-que-%C3%A9-o-sus-system-usability-scale-e-como-us%C3%A1-lo-em-seu-site-6d63224481c8)
+
+[Clickstream](https://pt.wikipedia.org/wiki/Clickstream)
+
+[Eye tracking](https://www.tobiibrasil.com/como-funciona-controle-ocular/)
