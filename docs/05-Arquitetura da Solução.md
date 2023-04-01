@@ -15,13 +15,13 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
-## Modelo ER
+## Modelo ER 
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
+O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
+Ferramenta para geração deste artefato: Draw.io.
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+> - ![Modelo ER](./img/modelo_er_adote_animal.png)
 
 ## Esquema Relacional
 
