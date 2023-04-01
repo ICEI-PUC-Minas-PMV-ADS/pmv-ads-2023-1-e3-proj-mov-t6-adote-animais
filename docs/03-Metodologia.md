@@ -45,6 +45,6 @@ As ferramentas empregadas no projeto são:
   - WhatsApp
   - Teams
 - Ferramentas de desenho de tela:
-  - Figma
+  - Excalidraw
 - Gerenciamento do Projeto:
   - Trello
