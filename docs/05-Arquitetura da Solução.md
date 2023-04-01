@@ -33,14 +33,16 @@ A Imagem abaixo foi retirada diretamente do banco implementado.
 ## Modelo Físico
 
 > - [Projeto de Banco de Dados - ADOTE ANIMAIS](../src/db/banco.sql)
+> - [Insert no banco - ADOTE ANIMAIS](../src/db/insert.sql)
+> - [Listagem das classes - ADOTE ANIMAIS](../src/db/select.sql)
 
 ## Tecnologias Utilizadas
 
 Diagrama de Classes : dbdiagram.io  
-Modelo ER : lucid 
-Projeto de Banco de Dados : DBeaver 
-Esquema Relacional : DBeaver
-Modelo Fisico : DBeaver
+Modelo ER : lucid  
+Projeto de Banco de Dados : DBeaver  
+Esquema Relacional : DBeaver  
+Modelo Fisico : DBeaver  
 
 ## Hospedagem
 
