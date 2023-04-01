@@ -1,6 +1,6 @@
 # Plano de Testes de Usabilidade
 
-> Uma descrição mais aprofundada está inclusa na documentação oficial do Plano de Teste
+> Uma descrição mais aprofundada está inclusa na documentação oficial do Plano de Teste e os documentos de Casos de Teste
 
 Buscam quantificar, o quão fácil é para um sistema, ser utilizado pelos mais variados tipos de usuário. Podemos citar, por exemplo: EyeTracking, Clickstream e o SUS
 

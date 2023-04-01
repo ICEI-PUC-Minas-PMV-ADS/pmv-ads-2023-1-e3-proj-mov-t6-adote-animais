@@ -1,6 +1,6 @@
 # Plano de Testes de Software
 
-> Uma descrição mais aprofundada está inclusa na documentação oficial do Plano de Teste
+> Uma descrição mais aprofundada está inclusa na documentação oficial do Plano de Teste e os documentos de Casos de Teste
 
 # Temos alguns tipos notáveis de testes a serem implementados
 
