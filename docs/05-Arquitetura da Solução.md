@@ -26,9 +26,9 @@ Ferramenta para geração deste artefato: Draw.io.
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
+A Imagem abaixo foi retirada diretamente do banco implementado.
 
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
+> - ![Esquema Relacional](./img/esquema_relacional_adote_animal.png)
 
 ## Modelo Físico
 
