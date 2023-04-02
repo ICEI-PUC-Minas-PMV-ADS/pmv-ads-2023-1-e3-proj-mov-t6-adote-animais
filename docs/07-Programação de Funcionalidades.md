@@ -4,6 +4,7 @@
 
 - Amanda Cacholi: Elaboração da Metodologia (tecnologias, ferramentas, controle de versão e gerenciamento do projeto), Projeto de interface (diagrama de fluxo e wireframes interativos), Programação de funcionalidades (implementação de layouts em telas), Criação do quadro kanban no Trello e gestão de cards com as tarefas.
 
+[Link para acessar o trello](https://trello.com/invite/b/945EfIBV/ATTI5d1f39ad137a0f9125cc2f6497d4219291C6A57C/adote-um-amigo)
 ![Código tela de cadastro](img/trello-atual.png)
 
 - **RF - 01** : Tela de cadastro onde usuários poderão se cadastrar. (Por Amanda Cacholi)
