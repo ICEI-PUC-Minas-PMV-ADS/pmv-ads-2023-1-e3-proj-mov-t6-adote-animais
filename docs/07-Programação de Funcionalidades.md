@@ -1,17 +1,23 @@
 # Programação de Funcionalidades
 
-- **RF - 01** : Tela de cadastro onde usuários poderão se cadastrar.
+### Quadro atual das contribuições dos membros do time:
+
+- Amanda Cacholi: Elaboração da Metodologia (tecnologias, ferramentas, controle de versão e gerenciamento do projeto), Projeto de interface (diagrama de fluxo e wireframes interativos), Programação de funcionalidades (implementação de layouts em telas), Criação do quadro kanban no Trello e gestão de cards com as tarefas.
+
+![Código tela de cadastro](img/trello-atual.png)
+
+- **RF - 01** : Tela de cadastro onde usuários poderão se cadastrar. (Por Amanda Cacholi)
   ![Código tela de cadastro](img/code-register.png)
 
-- **RF - 02** : Tela de login de usuários.
+- **RF - 02** : Tela de login de usuários. (Por Amanda Cacholi)
   ![Código tela de login](img/code-login.png)
 
-- **RF - 03** : A página inicial do usuário vai mostrar os cards com os pets cadastrados para adoção.
+- **RF - 03** : A página inicial do usuário vai mostrar os cards com os pets cadastrados para adoção. (Por Amanda Cacholi)
   ![Código tela inicial](img/code-main-screen.png)
 
-- **RF - 04** : Dentro dos cards vai ter as listas com as informações com os animais para adoção
+- **RF - 04** : Dentro dos cards vai ter as listas com as informações com os animais para adoção (Por Amanda Cacholi)
   ![Código tela inicial](img/code-pet-list.png)
 
-- **RF - 05** : Os cadastros podem fazer edições em seus perfis.
-- **RF - 06** : Os cadastros podem excluir seus perfis seus perfis.
+- **RF - 05** : Os cadastros podem fazer edições em seus perfis. (Por Amanda Cacholi)
+- **RF - 06** : Os cadastros podem excluir seus perfis seus perfis. (Por Amanda Cacholi)
   ![Código tela inicial](img/code-editing-information.png)
