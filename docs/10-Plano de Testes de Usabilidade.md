@@ -1,11 +1,17 @@
 # Plano de Testes de Usabilidade
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+|   Caso de teste   |                                                                      CT-06 - Responsividade                                                                     |
+|:-----------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| RNF - 01          | A aplicação deve ser responsiva respeitando a maioria dos aparelhos                                                                                             |
+| Objetivo do teste | Verificar responsividade do aplicativo em diferentes aparelhos                                                                                                  |
+| Passos            | 1 - Abrir o aplicativo; 2 - Navegar pelas páginas do aplicativo; 3 - Alterar o tamanho da tela dinamicamente; 4 - Verificar responsividade em telas diferentes; |
+| Critério de êxito | A tela se mantém responsiva, com os tamanhos adequados em diferentes tamanhos de tela em todas as páginas da aplicativo                                         |
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+
+|   Caso de teste   |                                                      CT-07 - Responsividade                                                      |
+|:-----------------:|:--------------------------------------------------------------------------------------------------------------------------------:|
+| RNF - 05          | O aplicativo deve ter bom nível de contraste entre os elementos da tela                                                          |
+| Objetivo do teste | Garantir um nível de contraste entre os elementos da tela                                                                        |
+| Passos            | 1 - Abrir o aplicativo; 2 - Navegar pelas páginas do aplicativo; 3 - Verificar o nível de constraste entre os elementos da tela; |
+| Critério de êxito | O nível de contraste das telas do aplicativo estão adequados entre si                                                            |
