@@ -20,7 +20,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 Ferramenta para geração deste artefato: Draw.io.
 
-> - ![Modelo ER](./img/Modelo_ER_adote_animal.png)  
+> - ![Modelo ER](./img/mer.png)  
 
 ## Esquema Relacional
 
