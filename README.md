@@ -10,15 +10,15 @@ Visando facilitar a adoção de animais de estimação e evitar o agravamento do
 
 ## Integrantes
 
-* Amanda Eufrasio
-* Gabriel Martins
-* Jéssica Serqueira
-* Marcus Vinicius
-* Rafael Nascimento
+- Amanda Cacholi
+- Gabriel Martins
+- Jéssica Serqueira
+- Marcus Vinicius
+- Rafael Nascimento
 
 ## Orientador
 
-* Diego Silva Caldeira Rocha
+- Diego Silva Caldeira Rocha
 
 ## Instruções de utilização
 
