@@ -30,7 +30,7 @@ A Imagem abaixo foi retirada diretamente do banco implementado.
 
 Ferramenta para geração deste artefato: lucid.
 
-> - ![Esquema Relacional](./img/esquema_relacional_adote_animal.png)
+> - ![Esquema Relacional](./img/esquema_relacional_adote_animal.png)  
 
 ## Modelo Físico
 
