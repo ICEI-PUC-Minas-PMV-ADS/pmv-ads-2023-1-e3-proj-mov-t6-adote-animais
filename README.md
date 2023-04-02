@@ -13,7 +13,7 @@ Visando facilitar a adoção de animais de estimação e evitar o agravamento do
 * Amanda Eufrasio
 * Gabriel Martins
 * Jéssica Serqueira
-* Marcus Vinicius
+* Marcus Vinicius 
 * Rafael Nascimento
 
 ## Orientador
