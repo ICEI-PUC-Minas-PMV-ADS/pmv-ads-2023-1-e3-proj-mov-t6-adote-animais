@@ -22,3 +22,23 @@
 - **RF - 05** : Os cadastros podem fazer edições em seus perfis. (Por Amanda Cacholi)
 - **RF - 06** : Os cadastros podem excluir seus perfis seus perfis. (Por Amanda Cacholi)
   ![Código tela inicial](img/code-editing-information.png)
+
+
+- Marcus Vincicius: Responsável por toda a parte de arquitetura e qualidade do projeto.
+
+**RF - 01**: Criação do Banco. (Por Marcus Vinicius)  
+![Criação do Banco](img/img_db_1.png)  
+
+**RF - 02**: Populando o Banco. (Por Marcus Vinicius)  
+![Populando o Banco](img/img_db_2.png)  
+
+**RF - 03**: Listagem de Usuarios. (Por Marcus Vinicius)  
+![Listagem de Usuarios](img/img_db_3_1.png)  
+
+**RF - 04**: Listagem de Animais. (Por Marcus Vinicius)  
+![Listagem de Animais](img/img_db_3_2.png)  
+
+**RF - 05**: Listagem de Usúario com seu animal cadastrado. (Por Marcus Vinicius)  
+![Listagem de Usúario com seu animal cadastrado](img/im_db_3.png)  
+
+
