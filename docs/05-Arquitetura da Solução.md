@@ -53,4 +53,29 @@ Banco de Dados e Back-End : Heroku
 
 ## Qualidade de Software
 
+A norma ISO/25010 define um modelo de qualidade de software que inclui oito características principais, cada uma com subcaracterísticas. A tabela abaixo apresenta essas características e subcaracterísticas:
 
+|Característica de Qualidade	|Subcaracterísticas	|Métricas	|Pontos|
+|--------------------|------------------------------------|----------------------------------------|----------------------------------------|
+|Funcionalidade	|Adequação	|Número de requisitos atendidos	|5|
+| |Acurácia	|Número de erros de precisão	|5|
+| |Interoperabilidade	|Número de sistemas com os quais se comunica	|3|
+| |Conformidade	|Número de requisitos regulamentares atendidos	|2|
+| |Segurança de acesso	|Número de vulnerabilidades de segurança identificadas	|5|
+|Confiabilidade	|Maturidade	|Tempo médio entre falhas	|4|
+| |Tolerância a falhas	|Número máximo de falhas toleráveis antes da interrupção do serviço	|4|
+| |Recuperabilidade	|Tempo médio de recuperação após uma falha	|3|
+|Usabilidade	|Compreensibilidade	|Nível de escolaridade necessário para usar o sistema	|3|
+| |Aprendizagem	|Tempo médio necessário para realizar uma tarefa pela primeira vez	|3|
+| |Operabilidade	|Número de cliques/telas necessárias para realizar uma tarefa	|3|
+| |Atratividade	|Número de usuários que avaliam o sistema como "atraente"	|2|
+|Eficiência	|Comportamento em relação ao tempo	|Tempo médio de resposta do sistema	|4|
+| |Comportamento em relação aos recursos	|Uso médio de recursos do sistema	|3|
+|Manutenibilidade	|Analisabilidade	|Tempo médio necessário para identificar a causa de um defeito	|3|
+| |Modificabilidade	|Tempo médio necessário para implementar uma alteração	|4|
+| |Estabilidade	|Número de defeitos identificados após uma alteração	|3|
+| |Testabilidade	|Número de testes necessários para validar uma alteração	|3|
+|Portabilidade	|Adaptabilidade	|Número de plataformas para as quais o sistema é portável	|3|
+| |Capacidade de instalação	|Tempo médio necessário para instalar o sistema	|2|
+| |Coexistência	|Número de sistemas com os quais o sistema pode coexistir	|2|
+| |Substituibilidade	|Tempo médio necessário para substituir o sistema	|2|
