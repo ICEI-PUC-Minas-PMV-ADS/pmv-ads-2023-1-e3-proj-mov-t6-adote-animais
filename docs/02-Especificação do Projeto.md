@@ -88,7 +88,7 @@ Encontram-se abaixo os requisitos que compõem o projeto
 
 - **RF - 05** : Os cadastros podem fazer edições em seus perfis. - **_MÉDIA_**
 
-- **RF - 06** : Os cadastros podem fazer excluir seus perfis seus perfis. - **_MÉDIA_**
+- **RF - 06** : Os cadastros podem excluir seus perfis seus perfis. - **_MÉDIA_**
 
 ### Requisitos não funcionais
 
