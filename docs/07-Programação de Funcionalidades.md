@@ -24,7 +24,7 @@
   ![Código tela inicial](img/code-editing-information.png)
 
 
-- Marcus Vincicius: Responsável por toda a parte de arquitetura e qualidade do projeto.
+- Marcus Vincicius: Responsável por toda a parte de arquitetura e qualidade do projeto, sendo, Qualidade do Software(Tabela com métricas e pontuação), Padronização de Qualidade do Produto, Modelo ER(com base no banco), Tecnologias Utilizadas(para a arquitetura), Modelo Físico(com todas as implementações feitas e já funcionais no banco de dados), Esquema Relacional(com as relações entre as tabelas), Diagrama de Classes, Implementação do Banco de Dados.  
 
 **RF - 01**: Criação do Banco. (Por Marcus Vinicius)  
 ![Criação do Banco](img/img_db_1.png)  
