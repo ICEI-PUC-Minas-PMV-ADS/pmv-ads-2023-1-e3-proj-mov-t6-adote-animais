@@ -6,6 +6,12 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 
 Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
+## Contribuições dos membros
+
+- [Fornecimento do "retrato" atual do status das contribuições dos membros do time no Github podem ser encontrados em maioria na aba de PRs](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-adote-animais/pulls?q=is%3Apr+is%3Aclosed)
+
+- [Comentários adicionais sobre as responsabilidades/atribuições de cada membro do time podem ser encontrados em maioria na Trello](https://trello.com/invite/b/945EfIBV/ATTI5d1f39ad137a0f9125cc2f6497d4219291C6A57C/adote-um-amigo)
+
 > **Links Úteis**:
 >
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
