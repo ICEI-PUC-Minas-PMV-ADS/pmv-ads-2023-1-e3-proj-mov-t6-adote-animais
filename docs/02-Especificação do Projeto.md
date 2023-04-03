@@ -43,34 +43,22 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Modelagem do Processo de Negócio
 
-### Análise da Situação Atual
-
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
-
-### Descrição Geral da Proposta
-
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
-
-### Processo 1 – NOME DO PROCESSO
-
 O modelo de Processos foi feito baseado nos acessos do usuário dentro do WebSite
 ![new-bpmn-diagram](https://user-images.githubusercontent.com/103543979/229309288-b35673cd-fcdc-43e7-ba92-c327f99abbb1.png)
 
-![Processo 1](img/02-bpmn-proc1.png)
-
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
-
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores.
+Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores.  
 
-Usar o seguinte modelo:
+|Indicador	|Objetivo	|Descrição	|Cálculo	|Fonte de Dados	|Perspectiva|
+|--------------------|------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|-----------------------------------|
+|Taxa de Adoção	|Aumentar o número de animais adotados através da aplicação	|Porcentagem de animais adotados em relação ao número total de animais cadastrados na aplicação	|(Número de animais adotados / Número total de animais cadastrados) x 100	|Banco de dados da aplicação	|Cliente|
+|Taxa de Retenção de Usuários	|Fidelizar usuários na aplicação	|Porcentagem de usuários ativos na aplicação após 90 dias da primeira utilização	|(Número de usuários ativos após 90 dias da primeira utilização / Número total de usuários cadastrados) x 100	|Banco de dados da aplicação	|Cliente|
+|Tempo de Resposta ao Usuário	|Garantir a satisfação do usuário	|Tempo médio de resposta às dúvidas e solicitações dos usuários	|Soma do tempo de resposta às dúvidas e solicitações / Número total de dúvidas e solicitações	|Banco de dados da aplicação	|Cliente|
+|Índice de Satisfação do Usuário	|Garantir a satisfação do usuário	|Porcentagem de usuários satisfeitos com a aplicação	|(Número de avaliações positivas / Número total de avaliações) x 100	|Banco de dados da aplicação	|Cliente|
+|Taxa de Conversão	|Aumentar o número de downloads e cadastros na aplicação	|Porcentagem de usuários que realizam o download e cadastro na aplicação após visualizar informações sobre ela	|(Número de downloads e cadastros / Número total de visualizações de informações sobre a aplicação) x 100	|Ferramentas de análise de mercado e mídias sociais|	Interno|  
+  
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
 Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori.
 
 ## Requisitos
