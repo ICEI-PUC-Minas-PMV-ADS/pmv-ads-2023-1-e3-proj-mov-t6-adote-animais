@@ -4,7 +4,7 @@
 
 - Amanda Cacholi: Elaboração da Metodologia (tecnologias, ferramentas, controle de versão e gerenciamento do projeto), Projeto de interface (diagrama de fluxo e wireframes interativos), Programação de funcionalidades (implementação de layouts em telas), Criação do quadro kanban no Trello e gestão de cards com as tarefas.
 
-- Marcus Vincicius: Responsável por toda a parte de arquitetura e qualidade do projeto, sendo, Qualidade do Software(Tabela com métricas e pontuação), Padronização de Qualidade do Produto, Modelo ER(com base no banco), Tecnologias Utilizadas(para a arquitetura), Modelo Físico(com todas as implementações feitas e já funcionais no banco de dados), Esquema Relacional(com as relações entre as tabelas), Diagrama de Classes, Implementação do Banco de Dados.  
+- Marcus Vincicius: Responsável por toda a parte de arquitetura e qualidade do projeto, sendo, Qualidade do Software(Tabela com métricas e pontuação), Padronização de Qualidade do Produto, Modelo ER(com base no banco), Tecnologias Utilizadas(para a arquitetura), Modelo Físico(com todas as implementações feitas e já funcionais no banco de dados), Esquema Relacional(com as relações entre as tabelas), Diagrama de Classes, Indicadores de Desempenho e Implementação do Banco de Dados.  
 
 [Link para acessar o trello](https://trello.com/invite/b/945EfIBV/ATTI5d1f39ad137a0f9125cc2f6497d4219291C6A57C/adote-um-amigo)
 ![Código tela de cadastro](img/trello-atual.png)
