@@ -1,11 +1,9 @@
 import { View, StyleSheet } from "react-native";
 import { Button, TextInput, DefaultTheme } from "react-native-paper";
-import Header from "./header";
 
 const EditInformationForm = () => {
   return (
     <View>
-      <Header title="Editar informações" screenType="editing" />
       <View style={styles.container}>
         <View style={styles.containerForm}>
           <TextInput label="Nome" />

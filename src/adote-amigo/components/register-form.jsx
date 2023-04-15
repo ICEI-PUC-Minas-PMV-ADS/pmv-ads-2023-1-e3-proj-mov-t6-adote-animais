@@ -1,14 +1,27 @@
 import { View, StyleSheet, Text } from "react-native";
-import { Button, TextInput } from "react-native-paper";
+import { Button, TextInput, DefaultTheme } from "react-native-paper";
 
-const RegisterForm = () => {
+const RegisterForm = ({ setPage, setIsLogged }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Cadastro</Text>
+      <View>
+        <Text style={styles.text}>Cadastro</Text>
+        <View style={styles.containerSubTitle}>
+          <Text style={styles.textSubTitle}>ou faça login </Text>
+          <Text
+            style={styles.textSubtitleLink}
+            onPress={() => setPage("login")}
+          >
+            aqui
+          </Text>
+        </View>
+      </View>
       <TextInput label="Nome" />
       <TextInput label="Email" />
       <TextInput secureTextEntry={true} label="Senha" type="password" />
-      <Button mode="contained">Cadastrar</Button>
+      <Button mode="contained" onPress={() => setIsLogged(true)}>
+        Cadastrar
+      </Button>
     </View>
   );
 };
@@ -26,5 +39,18 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 40,
     textAlign: "center",
+  },
+  containerSubTitle: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  textSubTitle: {
+    fontSize: 15,
+  },
+  textSubtitleLink: {
+    fontSize: 15,
+    fontWeight: "bold",
+    color: DefaultTheme.colors.primary,
   },
 });
