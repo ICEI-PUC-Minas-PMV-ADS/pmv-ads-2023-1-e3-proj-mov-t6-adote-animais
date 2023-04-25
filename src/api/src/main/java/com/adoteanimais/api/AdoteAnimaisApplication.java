@@ -10,5 +10,4 @@ public class AdoteAnimaisApplication {
 		SpringApplication.run(AdoteAnimaisApplication.class, args);
 	}
 
-
 }
