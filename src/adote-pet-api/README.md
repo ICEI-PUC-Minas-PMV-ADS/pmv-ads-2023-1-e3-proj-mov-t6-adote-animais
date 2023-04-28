@@ -1,3 +1,3 @@
 # Adote um pet API
 
-API REST para utilização com app React Native usando [PostgreSQL](https://www.postgresql.org/), [FastAPI](https://fastapi.tiangolo.com/) e [Peewee ORM](https://docs.peewee-orm.com/en/latest/index.html)
+API REST para utilização com app React Native deve rodar o comando **uvicorn src.main:app --port 5001 --reload** na pasta 'adote-pet-api' e seguir o passo a passo na documentação **http://127.0.0.1:5001/docs**
