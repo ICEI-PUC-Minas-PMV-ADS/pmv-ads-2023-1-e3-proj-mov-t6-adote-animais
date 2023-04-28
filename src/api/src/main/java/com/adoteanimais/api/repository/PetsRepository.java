@@ -1,4 +1,6 @@
 package com.adoteanimais.api.repository;
 
-public class PetsRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class PetsRepository extends JpaRepository<String > {
 }
