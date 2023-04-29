@@ -2,3 +2,4 @@ fastapi
 uvicorn
 peewee
 psycopg2
+bcrypt
