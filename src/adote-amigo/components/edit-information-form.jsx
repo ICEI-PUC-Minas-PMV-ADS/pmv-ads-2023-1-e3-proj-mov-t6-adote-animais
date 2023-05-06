@@ -5,19 +5,20 @@ const EditInformationForm = () => {
   return (
     <View style={styles.container}>
       <View style={styles.containerForm}>
-        <TextInput label="Nome" />
-        <TextInput label="Email" keyboardType="email-address" />
-        <TextInput label="Telefone" />
-        <TextInput label="Data de nascimento" />
-        <TextInput label="CPF" />
-        <TextInput secureTextEntry={true} label="Senha" type="password" />
-        <Button mode="contained">Salvar</Button>
-      </View>
-      <View style={styles.deleteButtonContainer}>
+        <TextInput label="Nome"/> 
+        <TextInput label="Email" keyboardType="email-address"/>
+        <TextInput label="Telefone"/>
+        <TextInput label="Data de nascimento"/>
+        <TextInput label="CPF"/>
+        <TextInput secureTextEntry={true} label="Senha" type="password"/>
+        <Button mode="contained" onPress={() => console.log("pressionado")}>
+          Salvar
+        </Button>
         <Button
           buttonColor={DefaultTheme.colors.errorContainer}
           textColor={DefaultTheme.colors.error}
           mode="contained-tonal"
+          onPress={() => console.log("Pressed")}
         >
           Excluir conta
         </Button>
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
   },
   container: {
     marginHorizontal: 20,
-    marginTop: 50,
+    marginTop: 30,
   },
   deleteButtonContainer: {
     alignItems: "center",
