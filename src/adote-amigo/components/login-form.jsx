@@ -1,7 +1,14 @@
+import { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Button, TextInput, DefaultTheme } from "react-native-paper";
 
 const LoginForm = ({ setPage, setIsLogged }) => {
+  const [form, setForm] = useState({});
+
+  const isEmailValid = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   return (
     <View style={styles.container}>
       <View>
@@ -16,9 +23,32 @@ const LoginForm = ({ setPage, setIsLogged }) => {
           </Text>
         </View>
       </View>
-      <TextInput label="Email" />
-      <TextInput secureTextEntry={true} label="Senha" type="password" />
-      <Button mode="contained" onPress={() => setIsLogged(true)}>
+      <TextInput
+        label="Email"
+        onChangeText={(email) => {
+          setForm((state) => ({ ...state, email }));
+        }}
+      />
+      <TextInput
+        secureTextEntry={true}
+        label="Senha"
+        type="password"
+        onChangeText={(password) => {
+          setForm((state) => ({ ...state, password }));
+        }}
+      />
+      <Button
+        mode="contained"
+        onPress={() => {
+          if (!form.email || !form.password) {
+            alert("Preencha todos os campos");
+          } else if (!isEmailValid(form.email)) {
+            alert("Email inválido");
+          } else {
+            setIsLogged(true);
+          }
+        }}
+      >
         Entrar
       </Button>
     </View>
