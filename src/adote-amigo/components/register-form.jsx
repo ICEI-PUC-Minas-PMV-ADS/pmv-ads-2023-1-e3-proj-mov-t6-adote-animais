@@ -1,7 +1,14 @@
+import { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Button, TextInput, DefaultTheme } from "react-native-paper";
 
 const RegisterForm = ({ setPage, setIsLogged }) => {
+  const [form, setForm] = useState({});
+
+  const isEmailValid = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   return (
     <View style={styles.container}>
       <View>
@@ -16,10 +23,38 @@ const RegisterForm = ({ setPage, setIsLogged }) => {
           </Text>
         </View>
       </View>
-      <TextInput label="Nome" />
-      <TextInput label="Email" />
-      <TextInput secureTextEntry={true} label="Senha" type="password" />
-      <Button mode="contained" onPress={() => setIsLogged(true)}>
+      <TextInput
+        label="Nome"
+        onChangeText={(name) => {
+          setForm((state) => ({ ...state, name }));
+        }}
+      />
+      <TextInput
+        label="Email"
+        onChangeText={(email) => {
+          setForm((state) => ({ ...state, email }));
+        }}
+      />
+      <TextInput
+        secureTextEntry={true}
+        label="Senha"
+        type="password"
+        onChangeText={(password) => {
+          setForm((state) => ({ ...state, password }));
+        }}
+      />
+      <Button
+        mode="contained"
+        onPress={() => {
+          if (!form.name || !form.email || !form.password) {
+            alert("Preencha todos os campos");
+          } else if (!isEmailValid(form.email)) {
+            alert("Preencha um email válido");
+          } else {
+            setIsLogged(true);
+          }
+        }}
+      >
         Cadastrar
       </Button>
     </View>
