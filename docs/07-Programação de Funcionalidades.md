@@ -16,13 +16,15 @@
 
 - **RF - 01** : Tela de cadastro onde usuários poderão se cadastrar. (Por Amanda Cacholi)
   ![Código tela de cadastro](img/code-register.png)
-  Validação:
-  ![Validação formulário de cadastro](img/code-validation-register.png)
+
+  - Validação:
+    ![Validação formulário de cadastro](img/code-validation-register.png)
 
 - **RF - 02** : Tela de login de usuários. (Por Amanda Cacholi)
   ![Código tela de login](img/code-login.png)
-  Validação:
-  ![Validação formulário de login](img/code-validation-login.png)
+
+  - Validação:
+    ![Validação formulário de login](img/code-validation-login.png)
 
 - **RF - 03** : A página inicial do usuário vai mostrar os cards com os pets cadastrados para adoção. (Por Amanda Cacholi)
   ![Código tela inicial](img/code-main-screen.png)
