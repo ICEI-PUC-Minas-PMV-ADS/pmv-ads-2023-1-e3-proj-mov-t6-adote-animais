@@ -13,7 +13,6 @@
 - Marcus Vincicius: Responsável por toda a parte de arquitetura e qualidade do projeto, sendo, Qualidade do Software(Tabela com métricas e pontuação), Padronização de Qualidade do Produto, Modelo ER(com base no banco), Tecnologias Utilizadas(para a arquitetura), Modelo Físico(com todas as implementações feitas e já funcionais no banco de dados), Esquema Relacional(com as relações entre as tabelas), Diagrama de Classes, Indicadores de Desempenho e Implementação do Banco de Dados.
 
 [Link para acessar o trello](https://trello.com/invite/b/945EfIBV/ATTI5d1f39ad137a0f9125cc2f6497d4219291C6A57C/adote-um-amigo)
-![Código tela de cadastro](img/trello-atual.png)
 
 - **RF - 01** : Tela de cadastro onde usuários poderão se cadastrar. (Por Amanda Cacholi)
   ![Código tela de cadastro](img/code-register.png)
