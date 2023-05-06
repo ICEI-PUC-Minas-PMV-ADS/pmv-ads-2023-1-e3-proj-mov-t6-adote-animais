@@ -21,18 +21,6 @@ class AnimalBase(BaseModel):
     data_de_nascimento: datetime | None
     flag_castrado: bool
 
-class AnimalInDb(AnimalBase):
-    id: int
-    usuario_id: int
-    data_de_criacao: datetime
-    class Config:
-        orm_mode = True
-        getter_dict = PeeweeGetterDict
-
-class AnimalCreate(AnimalBase):
-    pass
-
-
 class UsuarioBase(BaseModel):
     nome_completo: str
     email: str
@@ -42,6 +30,7 @@ class UsuarioBase(BaseModel):
     cep: str | None
     data_de_nascimento: datetime | None
 
+
 class UsuarioInDb(UsuarioBase):
     id: int
     data_de_criacao: datetime
@@ -49,6 +38,31 @@ class UsuarioInDb(UsuarioBase):
         orm_mode = True
         getter_dict = PeeweeGetterDict
 
+class AnimalInDb(AnimalBase):
+    id: int
+    usuario_id: UsuarioInDb
+    data_de_criacao: datetime
+    class Config:
+        orm_mode = True
+        getter_dict = PeeweeGetterDict
+
+class AnimalCreate(AnimalBase):
+    pass
+
+
 class UsuarioCreate(UsuarioBase):
     login: str
     senha: str
+
+class UsuarioLogin(BaseModel):
+    login: str
+    senha: str
+
+class animalFavoritoInDb(BaseModel):
+    id: int
+    animal_id: AnimalInDb
+    usuario_id: UsuarioInDb
+    data_de_criacao: datetime
+    class Config:
+        orm_mode = True
+        getter_dict = PeeweeGetterDict

@@ -29,3 +29,8 @@ class Animal(BaseModel):
     flag_castrado = peewee.BooleanField(default=False)
     usuario_id = peewee.ForeignKeyField(Usuario, backref='usuario')
     data_de_criacao = peewee.TimestampField(default=datetime.now())
+
+class AnimalFavorito(BaseModel):
+    usuario_id = peewee.ForeignKeyField(Usuario, backref='usuario')
+    animal_id = peewee.ForeignKeyField(Animal, backref='animal')
+    data_de_criacao = peewee.TimestampField(default=datetime.now())

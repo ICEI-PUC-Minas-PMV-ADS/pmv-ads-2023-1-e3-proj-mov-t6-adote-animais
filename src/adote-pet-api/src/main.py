@@ -4,7 +4,7 @@ from .database import db_state_default
 from .controller import router
 
 database.db.connect()
-database.db.create_tables([models.Usuario, models.Animal])
+database.db.create_tables([models.Usuario, models.Animal, models.AnimalFavorito])
 database.db.close()
 
 app = FastAPI()

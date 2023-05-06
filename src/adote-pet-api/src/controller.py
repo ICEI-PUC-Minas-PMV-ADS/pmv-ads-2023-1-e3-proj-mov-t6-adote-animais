@@ -1,6 +1,6 @@
 from .database import db, db_state_default
 from fastapi import Depends, APIRouter, HTTPException
-from .schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate
+from .schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate, UsuarioLogin, animalFavoritoInDb
 from typing import List
 from . import repository
 
@@ -39,3 +39,22 @@ def create_animal(animal: AnimalCreate, user_id: int):
 @router.post("/usuario", status_code=201, response_model=UsuarioInDb, dependencies=[Depends(get_db)])
 def create_user(user: UsuarioCreate):
     return repository.create_user(user)
+
+@router.post("/login", response_model=UsuarioInDb,dependencies=[Depends(get_db)])
+def login_user(user: UsuarioLogin):
+    login_do_usuario = repository.get_user_by_login(user.login)
+    if(login_do_usuario == None):
+        raise HTTPException(status_code=404, detail="Usuario não existe.")
+    if(login_do_usuario.senha != user.senha):
+        raise HTTPException(status_code=403, detail="Usuario com senha incorreta.")
+    return login_do_usuario
+
+@router.post("/favorito/{user_id}/{animal_id}", response_model=animalFavoritoInDb, dependencies=[Depends(get_db)])
+def create_animal_favorito(user_id: int, animal_id: int):
+    return repository.create_animal_favorite(user_id, animal_id)
+
+@router.get("/favorito/{user_id}", response_model=List[animalFavoritoInDb], dependencies=[Depends(get_db)])
+def get_animals_favorites(user_id: int, skip: int = 0, limit: int = 100):
+    favoritos = repository.get_animals_favorites(user_id, skip=skip, limit=limit)
+    return favoritos
+    
