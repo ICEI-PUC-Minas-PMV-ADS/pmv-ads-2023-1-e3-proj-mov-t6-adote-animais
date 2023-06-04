@@ -1098,6 +1098,11 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
+"@expo-google-fonts/chewy@^0.2.3":
+  "integrity" "sha512-jhTtmnesJId6KdjocrDnJp/3zv5quK89oVOmxNWAPtqg0eSr04FnLz1urNju+1JONHBx/bFSxQTtBGU7h6wjJw=="
+  "resolved" "https://registry.npmjs.org/@expo-google-fonts/chewy/-/chewy-0.2.3.tgz"
+  "version" "0.2.3"
+
 "@expo/bunyan@^4.0.0", "@expo/bunyan@4.0.0":
   "integrity" "sha512-Ydf4LidRB/EBI+YrB+cVLqIseiRfjUI/AeHBgjGMtq3GroraDu81OV7zqophRgupngoL3iS3JUMDMnxO7g39qA=="
   "resolved" "https://registry.npmjs.org/@expo/bunyan/-/bunyan-4.0.0.tgz"

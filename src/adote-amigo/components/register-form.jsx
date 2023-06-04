@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Button, TextInput, DefaultTheme } from "react-native-paper";
+import Logo from "./logo";
 
 const RegisterForm = ({ setPage, setIsLogged }) => {
   const [form, setForm] = useState({});
@@ -11,6 +12,7 @@ const RegisterForm = ({ setPage, setIsLogged }) => {
 
   return (
     <View style={styles.container}>
+      <Logo />
       <View>
         <Text style={styles.text}>Cadastro</Text>
         <View style={styles.containerSubTitle}>
@@ -32,7 +34,7 @@ const RegisterForm = ({ setPage, setIsLogged }) => {
       <TextInput
         label="Email"
         onChangeText={(email) => {
-          setForm((state) => ({ ...state, email }));
+          setForm((state) => ({ ...state, email: email.trim() }));
         }}
       />
       <TextInput
@@ -72,7 +74,7 @@ const styles = StyleSheet.create({
     margin: 20,
   },
   text: {
-    fontSize: 40,
+    fontSize: 25,
     textAlign: "center",
   },
   containerSubTitle: {
