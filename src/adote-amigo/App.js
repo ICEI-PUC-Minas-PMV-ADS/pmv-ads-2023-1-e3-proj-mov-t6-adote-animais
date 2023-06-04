@@ -12,13 +12,21 @@ import {
   DrawerItemList,
 } from "@react-navigation/drawer";
 import { DefaultTheme, IconButton } from "react-native-paper";
-import { SafeAreaView, StatusBar } from "react-native";
+import { SafeAreaView, StatusBar, View } from "react-native";
+import { useFonts, Chewy_400Regular } from "@expo-google-fonts/chewy";
 
 const Drawer = createDrawerNavigator();
 
 export default function App() {
+  const [loadedFonts] = useFonts({
+    Chewy: Chewy_400Regular,
+  });
   const [isLogged, setIsLogged] = useState(false);
   const [page, setPage] = useState("login");
+
+  if (!loadedFonts) {
+    return <View />;
+  }
 
   if (!isLogged && page === "login") {
     return (
@@ -91,6 +99,20 @@ export default function App() {
             drawerIcon: () => (
               <IconButton
                 icon="cat"
+                size={20}
+                iconColor={DefaultTheme.colors.primary}
+              />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="favorite-pets"
+          component={HomeScreen}
+          options={{
+            title: "Favoritos",
+            drawerIcon: () => (
+              <IconButton
+                icon="star"
                 size={20}
                 iconColor={DefaultTheme.colors.primary}
               />
