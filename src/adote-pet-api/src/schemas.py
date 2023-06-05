@@ -24,7 +24,7 @@ class AnimalBase(BaseModel):
 class UsuarioBase(BaseModel):
     nome_completo: str
     email: str
-    telefone: str
+    telefone: str | None
     cpf: str | None
     complemento: str | None
     cep: str | None
@@ -51,7 +51,7 @@ class AnimalCreate(AnimalBase):
 
 
 class UsuarioCreate(UsuarioBase):
-    login: str
+    login: str | None
     senha: str
 
 class UsuarioLogin(BaseModel):

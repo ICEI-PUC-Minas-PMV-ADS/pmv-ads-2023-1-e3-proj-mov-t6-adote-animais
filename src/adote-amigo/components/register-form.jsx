@@ -2,6 +2,7 @@ import { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Button, TextInput, DefaultTheme } from "react-native-paper";
 import Logo from "./logo";
+import { createUser } from "../services/adotePetApi";
 
 const RegisterForm = ({ setPage, setIsLogged }) => {
   const [form, setForm] = useState({});
@@ -53,6 +54,7 @@ const RegisterForm = ({ setPage, setIsLogged }) => {
           } else if (!isEmailValid(form.email)) {
             alert("Preencha um email válido");
           } else {
+            createUser(form)
             setIsLogged(true);
           }
         }}
