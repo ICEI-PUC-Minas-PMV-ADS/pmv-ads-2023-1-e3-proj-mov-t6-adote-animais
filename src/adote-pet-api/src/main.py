@@ -1,13 +1,23 @@
 from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
 from . import database, models
 from .database import db_state_default
 from .controller import router
+
 
 database.db.connect()
 database.db.create_tables([models.Usuario, models.Animal, models.AnimalFavorito])
 database.db.close()
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(router)
 

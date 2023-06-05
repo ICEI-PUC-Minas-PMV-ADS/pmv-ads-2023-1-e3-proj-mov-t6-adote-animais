@@ -10,12 +10,12 @@ class BaseModel(peewee.Model):
 class Usuario(BaseModel):
     nome_completo = peewee.CharField(max_length=150)
     email = peewee.CharField(max_length=150)
-    telefone = peewee.CharField(max_length=150)
+    telefone = peewee.CharField(max_length=150, null=True)
     cpf = peewee.CharField(max_length=150, null=True)
     complemento = peewee.CharField(max_length=150, null=True)
     cep = peewee.CharField(max_length=150, null=True)
-    data_de_nascimento = peewee.TimestampField()
-    login = peewee.CharField(max_length=150)
+    data_de_nascimento = peewee.TimestampField(null=True)
+    login = peewee.CharField(max_length=150, null=True)
     senha = peewee.CharField(max_length=150)
     data_de_criacao = peewee.TimestampField(default=datetime.now())
     
