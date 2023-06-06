@@ -1,5 +1,5 @@
-from . import models
-from .schemas import AnimalCreate, UsuarioCreate
+import models
+from schemas import AnimalCreate, UsuarioCreate
 
 
 def get_animal(id: int):

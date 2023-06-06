@@ -1,8 +1,8 @@
-from .database import db, db_state_default
+from database import db, db_state_default
 from fastapi import Depends, APIRouter, HTTPException
-from .schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate, UsuarioLogin, animalFavoritoInDb
+from schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate, UsuarioLogin, animalFavoritoInDb
 from typing import List
-from . import repository
+import repository
 
 async def reset_db_state():
     db._state._state.set(db_state_default.copy())

@@ -3,6 +3,7 @@ import { useState } from "react";
 import LoginForm from "./components/login-form";
 import EditInformationForm from "./components/edit-information-form";
 import HomeScreen from "./components/main-screen";
+import FavoriteScreen from "./components/fav-screen";
 import RegisterForm from "./components/register-form";
 import { NavigationContainer } from "@react-navigation/native";
 import {
@@ -107,7 +108,7 @@ export default function App() {
         />
         <Drawer.Screen
           name="favorite-pets"
-          component={HomeScreen}
+          component={FavoriteScreen}
           options={{
             title: "Favoritos",
             drawerIcon: () => (
