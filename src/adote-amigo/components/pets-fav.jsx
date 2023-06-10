@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FlatList } from "react-native";
-import { List } from "react-native-paper";
+import { List, IconButton, DefaultTheme } from "react-native-paper";
 import { useState, useEffect } from "react";
 
 const PetsFav = () => {
@@ -35,12 +35,17 @@ return ( <FlatList
     renderItem={({ item }) =>
       {{console.log(item)}
         return ( <List.Item
-        title={item.nome_completo}
-        description={`Descrição do ${item.tipo}`}
+        title={item.animal_id.nome_completo}
+        description={`Descrição do ${item.animal_id.tipo}`}
         left={(props) => (
           <List.Image {...props} source={require("../assets/cat.jpg")} />
         )}
-        right={(props) => <List.Icon {...props} icon="star-outline" />}
+        right={(props) => <IconButton
+            icon={item.usuario_id.id?"star-outline":"star"}
+            iconColor={DefaultTheme.colors.primary}
+            size={20}
+            onPress={() => console.log('Pressed')}
+          ><List.Icon {...props} icon="star-outline" /></IconButton>}
       />)}
     }
   />
