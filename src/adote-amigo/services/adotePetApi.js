@@ -2,7 +2,7 @@
 
 export function createUser(data) {
     console.log(data)
-    fetch('http://10.0.3.2:5001/api/usuario', {
+    fetch('http://192.168.100.8:8000/api/usuario', {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -20,13 +20,12 @@ export function createUser(data) {
 
 export function listAnimals() {
     console.log(data)
-    fetch('http://10.0.3.2:5001/api/animals')
+    fetch('http://192.168.100.8:8000/api/animals')
         .then((res) => res.json())
         .then((json) => console.log(json))
         .catch((err) => console.error(err))
 }
 
 export async function getAnimals() {
-    return await fetch('http://10.0.3.2:5001/api/animals');
+    return await fetch('http://192.168.100.8:8000/api/animals');
 }
-
