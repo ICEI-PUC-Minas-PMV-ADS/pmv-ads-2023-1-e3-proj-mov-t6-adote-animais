@@ -53,7 +53,7 @@ const PetsList = () => {
   return (<FlatList
     data={data}
     renderItem={({ item }) => {
-      {  }
+      { }
       return (<List.Item
         title={item.nome_completo}
         description={`A raça do ${item.nome_completo} é ${item.raca}, ele é do gênero ${item.genero}`}
@@ -80,7 +80,7 @@ const PetsList = () => {
                     method: 'POST'
                   })
                     .then((response) => response.json())
-                    .then(() => {
+                    .then((data) => {
                       alert("Pet favoritado!");
                       getFavorites();
                     });
@@ -89,7 +89,6 @@ const PetsList = () => {
                   alert("Pet já com estrela")
                 }
               } catch (error) {
-                alert('Ops, algo deu errado. Tente mais tarde!')
                 console.error(error);
               } finally {
                 setLoading(false);
@@ -97,6 +96,45 @@ const PetsList = () => {
             }
             }
           ><List.Icon {...props} icon="star-outline" /></IconButton>}
+      /*
+      right={(props) =>
+        <IconButton
+          icon="star-outline"
+          iconColor={DefaultTheme.colors.primary}
+          size={20}
+          onPress={() => {
+            try {
+              var exists = false
+              favorites.map((values) => {
+                // 2 - Itera em TODOS os itens e verifica se algum deles bate com a condicional
+                if (userId == values.usuario_id.id && petId == values.animal_id.id) {
+                  // 3 - Caso a condição bata, torna 'exists' 'true'
+                  exists = true;
+                }
+              })
+              if (!exists) {
+                fetch('http://localhost:8000/api/favorito/' + userId + "/" + petId, {
+                  method: 'POST'
+                })
+                  .then((response) => response.json())
+                  .then(() => {
+                    alert("Pet favoritado!");
+                    getFavorites();
+                  });
+              }
+              else {
+                alert("Pet já com estrela")
+              }
+            } catch (error) {
+              alert('Ops, algo deu errado. Tente mais tarde!')
+              console.error(error);
+            } finally {
+              setLoading(false);
+            }
+          }
+          }
+        ><List.Icon {...props} icon="star-outline" /></IconButton>}
+      */
       />)
     }
     }
