@@ -1,8 +1,8 @@
-from .database import db, db_state_default
+from database import db, db_state_default
 from fastapi import Depends, APIRouter, HTTPException
-from .schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate, UsuarioLogin, animalFavoritoInDb
+from schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate, UsuarioLogin, animalFavoritoInDb
 from typing import List
-from . import repository
+import repository
 
 async def reset_db_state():
     db._state._state.set(db_state_default.copy())
@@ -39,6 +39,7 @@ def create_animal(animal: AnimalCreate, user_id: int):
 @router.post("/usuario", status_code=201, response_model=UsuarioInDb, dependencies=[Depends(get_db)])
 def create_user(user: UsuarioCreate):
     return repository.create_user(user)
+
 
 @router.post("/login", response_model=UsuarioInDb,dependencies=[Depends(get_db)])
 def login_user(user: UsuarioLogin):

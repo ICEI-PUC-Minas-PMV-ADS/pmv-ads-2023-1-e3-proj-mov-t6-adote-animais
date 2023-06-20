@@ -2,6 +2,7 @@ import "react-native-gesture-handler";
 import { useState } from "react";
 import LoginForm from "./components/login-form";
 import EditInformationForm from "./components/edit-information-form";
+import CreatePetForm from "./components/create-animal";
 import HomeScreen from "./components/main-screen";
 import RegisterForm from "./components/register-form";
 import { NavigationContainer } from "@react-navigation/native";
@@ -113,6 +114,20 @@ export default function App() {
             drawerIcon: () => (
               <IconButton
                 icon="star"
+                size={20}
+                iconColor={DefaultTheme.colors.primary}
+              />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="create-animals"
+          component={CreatePetForm}
+          options={{
+            title: "Cadastrar um pet",
+            drawerIcon: () => (
+              <IconButton
+                icon="dog"
                 size={20}
                 iconColor={DefaultTheme.colors.primary}
               />

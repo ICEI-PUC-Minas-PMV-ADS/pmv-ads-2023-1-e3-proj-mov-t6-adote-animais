@@ -11,13 +11,21 @@ const EditInformationForm = () => {
         <TextInput label="Data de nascimento" />
         <TextInput label="CPF" />
         <TextInput secureTextEntry={true} label="Senha" type="password" />
-        <Button mode="contained">Salvar</Button>
+        <Button mode="contained" onPress={() => {
+          alert("Usuário alterado com sucesso!")
+          window.location.reload()
+        }}>Salvar</Button>
       </View>
       <View style={styles.deleteButtonContainer}>
         <Button
           buttonColor={DefaultTheme.colors.errorContainer}
           textColor={DefaultTheme.colors.error}
+          style={{ margin: '1.5em' }}
           mode="contained-tonal"
+          onPress={() => {
+            alert("Usuário excluído com sucesso!")
+            window.location.reload()
+          }}
         >
           Excluir conta
         </Button>

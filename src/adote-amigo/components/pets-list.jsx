@@ -14,14 +14,15 @@ const PetsList = () => {
 
   const getFavorites = async () => {
     try {
-        fetch('http://192.168.100.8:8000/api/favorito/'+ userId) 
-            .then((response) => response.json()) 
-            .then((favorites) => {
-                setFavorites(favorites);
-                console.log(favorites)
-            });
+      fetch('http://localhost:8000/api/favorito/' + userId)
+        .then((response) => response.json())
+        .then((favorites) => {
+          setFavorites(favorites);
+          // console.log(favorites)
+        });
     } catch (error) {
-      console.error(error);
+      // console.error(error);
+      alert("Ops, algo deu errado. Tente mais tarde!")
     } finally {
       setLoading(false);
     }
@@ -29,12 +30,12 @@ const PetsList = () => {
 
   const getData = async () => {
     try {
-      fetch('http://192.168.100.8:8000/api/animals') 
-            .then((response) => response.json()) 
-            .then((data) => {
-                setData(data);
-                console.log(data)
-            });
+      fetch('http://localhost:8000/api/animals')
+        .then((response) => response.json())
+        .then((data) => {
+          setData(data);
+          // console.log(data)
+        });
     } catch (error) {
       console.error(error);
     } finally {
@@ -47,57 +48,60 @@ const PetsList = () => {
     getData();
   }, []);
 
-  if(isLoading) return null
+  if (isLoading) return null
 
-return ( <FlatList
+  return (<FlatList
     data={data}
-    renderItem={({ item }) =>
-      {{console.log(item)}
-        return ( <List.Item
+    renderItem={({ item }) => {
+      {  }
+      return (<List.Item
         title={item.nome_completo}
-        description={`Descrição do ${item.tipo}`}
+        description={`A raça do ${item.nome_completo} é ${item.raca}, ele é do gênero ${item.genero}`}
         left={(props) => (
-          <List.Image {...props} source={require("../assets/cat.jpg")} />
+          <List.Image {...props} source={require("../assets/logo.png")} />
         )}
-        right={(props) => 
+        right={(props) =>
           <IconButton
-            icon= "star-outline"
+            icon="star-outline"
             iconColor={DefaultTheme.colors.primary}
             size={20}
             onPress={() => {
-                try {
-                  var exists = false
-                  favorites.map((values) => {
-                        // 2 - Itera em TODOS os itens e verifica se algum deles bate com a condicional
-                        if (userId == values.usuario_id.id && petId == values.animal_id.id) {
-                              // 3 - Caso a condição bata, torna 'exists' 'true'
-                              exists = true;
-                        }
+              try {
+                var exists = false
+                favorites.map((values) => {
+                  // 2 - Itera em TODOS os itens e verifica se algum deles bate com a condicional
+                  if (userId == values.usuario_id.id && petId == values.animal_id.id) {
+                    // 3 - Caso a condição bata, torna 'exists' 'true'
+                    exists = true;
+                  }
+                })
+                if (!exists) {
+                  fetch('http://localhost:8000/api/favorito/' + userId + "/" + petId, {
+                    method: 'POST'
                   })
-                  if (!exists) {
-                      fetch('http://192.168.100.8:8000/api/favorito/'+userId+"/"+petId,{
-                      method : 'POST'
-                    }) 
-                    .then((response) => response.json()) 
-                    .then((data) => {
+                    .then((response) => response.json())
+                    .then(() => {
                       alert("Pet favoritado!");
                       getFavorites();
                     });
-                  }
-                  else{
-                    alert("Pet já com estrela")
-                  }
-                } catch (error) {
-                  console.error(error);
-                } finally {
-                  setLoading(false);
                 }
+                else {
+                  alert("Pet já com estrela")
+                }
+              } catch (error) {
+                alert('Ops, algo deu errado. Tente mais tarde!')
+                console.error(error);
+              } finally {
+                setLoading(false);
               }
             }
+            }
           ><List.Icon {...props} icon="star-outline" /></IconButton>}
-      />)}
+      />)
+    }
     }
   />
-)};
+  )
+};
 
 export default PetsList;

@@ -1,8 +1,8 @@
 // import axios from "axios";
 
 export function createUser(data) {
-    console.log(data)
-    fetch('http://192.168.100.8:8000/api/usuario', {
+    // console.log(data)
+    fetch('http://localhost:8000/api/usuario', {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -13,19 +13,21 @@ export function createUser(data) {
             email: data.email,
             senha: data.password
         })})
-        .then((res) => res.json())
+        .then(() => alert("Usuário criado com sucesso!"))
+        .catch(() => alert("Erro ao criar usuário, tente mais tarde!"))
+        /*.then((res) => res.json())
         .then((json) => console.log(json))
-        .catch((err) => console.error(err))
+        .catch((err) => console.error(err))//*/
 }
 
 export function listAnimals() {
-    console.log(data)
-    fetch('http://192.168.100.8:8000/api/animals')
+    // console.log(data)
+    fetch('http://localhost:8000/api/animals')
         .then((res) => res.json())
         .then((json) => console.log(json))
         .catch((err) => console.error(err))
 }
 
 export async function getAnimals() {
-    return await fetch('http://192.168.100.8:8000/api/animals');
+    return await fetch('http://localhost:8000/api/animals');
 }

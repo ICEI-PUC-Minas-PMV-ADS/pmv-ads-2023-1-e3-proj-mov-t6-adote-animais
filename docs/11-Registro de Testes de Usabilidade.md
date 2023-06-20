@@ -2,8 +2,8 @@
 
 ## CT-06
 
-Ainda não testado
+A tela se mantém responsiva, com os tamanhos adequados em diferentes tamanhos de tela em todas as páginas da aplicativo
 
 ## CT-07
 
-Ainda não testado
+O nível de contraste das telas do aplicativo estão adequados entre si

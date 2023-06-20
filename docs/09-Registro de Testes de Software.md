@@ -2,20 +2,20 @@
 
 ## CT-01
 
-Ainda não testado
+Ao clicar em login ou cadastro, o usuário é corretamente levado para a página de login e cadastro
 
 ## CT-02
 
-Ainda não testado
+Os dados são corretamente validados e cadastrados
 
 ## CT-03
 
-Ainda não testado
+Os dados são corretamente validados e a autenticação ocorre devidamente
 
 ## CT-04
 
-Ainda não testado
+Os cards aparecem com as informações certas cadastradas no banco, relativas aos dados registrados pelo usuário em questão
 
 ## CT-05
 
-Ainda não testado
+O usuário é alterado e/ou excluído com êxito, no entanto, apenas no cliente
