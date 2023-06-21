@@ -13,7 +13,7 @@ const PetsList = () => {
 
 	const getFavorites = async () => {
 		try {
-			fetch("http://192.168.100.8:8000/api/favorito/" + userId)
+			fetch("http://localhost:8000/api/favorito/" + userId)
 				.then((response) => response.json())
 				.then((favorites) => {
 					setFavorites(favorites);
@@ -29,7 +29,7 @@ const PetsList = () => {
 
 	const getData = async () => {
 		try {
-			fetch("http://192.168.100.8:8000/api/animals")
+			fetch("http://localhost:8000/api/animals")
 				.then((response) => response.json())
 				.then((data) => {
 					setData(data);
@@ -58,6 +58,35 @@ const PetsList = () => {
 				return (
 					<List.Item
 						title={item.nome_completo}
+						onPress={() => {
+							try {
+								let exists = false;
+								favorites.map((values) => {
+									// 2 - Itera em TODOS os itens e verifica se algum deles bate com a condicional
+									if (userId == values.usuario_id.id && item.id == values.animal_id.id) {
+										// 3 - Caso a condição bata, torna 'exists' 'true'
+										exists = true;
+									}
+								});
+								if (!exists) {
+									fetch("http://localhost:8000/api/favorito/" + userId + "/" + item.id, {
+										method: "POST",
+									})
+										.then((response) => response.json())
+										.then((data) => {
+											alert("Pet favoritado!");
+											getFavorites();
+											window.location.reload()
+										});
+								} else {
+									alert("Pet já com estrela");
+								}
+							} catch (error) {
+								console.error(error);
+							} finally {
+								setLoading(false);
+							}
+						}}
 						description={`A raça do ${item.nome_completo} é ${item.raca}, ele é do gênero ${item.genero}`}
 						left={(props) => <List.Image {...props} source={require("../assets/logo.png")} />}
 						right={(props) => (
@@ -65,77 +94,10 @@ const PetsList = () => {
 								icon="star-outline"
 								iconColor={DefaultTheme.colors.primary}
 								size={20}
-								onPress={() => {
-									try {
-										let exists = false;
-										favorites.map((values) => {
-											// 2 - Itera em TODOS os itens e verifica se algum deles bate com a condicional
-											if (userId == values.usuario_id.id && item.id == values.animal_id.id) {
-												// 3 - Caso a condição bata, torna 'exists' 'true'
-												exists = true;
-											}
-										});
-										if (!exists) {
-											fetch("http://192.168.100.8:8000/api/favorito/" + userId + "/" + item.id, {
-												method: "POST",
-											})
-												.then((response) => response.json())
-												.then((data) => {
-													alert("Pet favoritado!");
-													getFavorites();
-												});
-										} else {
-											alert("Pet já com estrela");
-										}
-									} catch (error) {
-										console.error(error);
-									} finally {
-										setLoading(false);
-									}
-								}}
 							>
 								<List.Icon {...props} />
 							</IconButton>
 						)}
-						/*
-      right={(props) =>
-        <IconButton
-          icon="star-outline"
-          iconColor={DefaultTheme.colors.primary}
-          size={20}
-          onPress={() => {
-            try {
-              var exists = false
-              favorites.map((values) => {
-                // 2 - Itera em TODOS os itens e verifica se algum deles bate com a condicional
-                if (userId == values.usuario_id.id && petId == values.animal_id.id) {
-                  // 3 - Caso a condição bata, torna 'exists' 'true'
-                  exists = true;
-                }
-              })
-              if (!exists) {
-                fetch('http://localhost:8000/api/favorito/' + userId + "/" + petId, {
-                  method: 'POST'
-                })
-                  .then((response) => response.json())
-                  .then(() => {
-                    alert("Pet favoritado!");
-                    getFavorites();
-                  });
-              }
-              else {
-                alert("Pet já com estrela")
-              }
-            } catch (error) {
-              alert('Ops, algo deu errado. Tente mais tarde!')
-              console.error(error);
-            } finally {
-              setLoading(false);
-            }
-          }
-          }
-        ><List.Icon {...props} icon="star-outline" /></IconButton>}
-      */
 					/>
 				);
 			}}

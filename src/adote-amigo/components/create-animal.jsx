@@ -38,7 +38,7 @@ const CreateAnimal = ({ setPage, setIsLogged }) => {
 					if (!form.name || !form.raca || !form.genero) {
 						alert("Preencha todos os campos");
 					} else {
-						fetch("http://192.168.100.8:8000/api/animals/" + userId, {
+						fetch("http://localhost:8000/api/animals/" + userId, {
 							method: "POST",
 							headers: {
 								Accept: "application/json",
@@ -55,10 +55,9 @@ const CreateAnimal = ({ setPage, setIsLogged }) => {
 						})
 							.then((res) => {
 								alert("Pet criado com sucesso!");
-								// window.location.reload();
+								window.location.reload();
 								return res.json();
 							})
-							.then((data) => console.log(data))
 							.catch((err) => {
 								console.log(err);
 								alert("Erro ao criar pet, tente mais tarde!");

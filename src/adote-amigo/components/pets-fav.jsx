@@ -10,7 +10,7 @@ const PetsFav = () => {
 
 	const getData = async () => {
 		try {
-			fetch("http://192.168.100.8:8000/api/favorito/" + userId)
+			fetch("http://localhost:8000/api/favorito/" + userId)
 				.then((response) => response.json())
 				.then((data) => {
 					setData(data);
