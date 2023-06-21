@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from . import database, models
-from .database import db_state_default
-from .controller import router
+import database, models
+from database import db_state_default
+from controller import router
 
 
 database.db.connect()

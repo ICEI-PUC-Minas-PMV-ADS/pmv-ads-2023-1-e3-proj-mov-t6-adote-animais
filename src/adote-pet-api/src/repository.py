@@ -1,5 +1,5 @@
-from . import models
-from .schemas import AnimalCreate, UsuarioCreate
+import models
+from schemas import AnimalCreate, UsuarioCreate
 
 
 def get_animal(id: int):
@@ -24,7 +24,7 @@ def create_user(user: UsuarioCreate):
     user = models.Usuario(**user.dict())
     user.save()
     return user
-
+ 
 def get_user_by_login(login: str):
     return models.Usuario.filter(models.Usuario.login == login).first()
 
