@@ -2,6 +2,7 @@ import { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Button, TextInput, DefaultTheme } from "react-native-paper";
 import Logo from "./logo";
+import { linkNgrok } from "../services/adotePetApi";
 
 const CreateAnimal = ({ setPage, setIsLogged }) => {
 	const [form, setForm] = useState({});
@@ -38,7 +39,7 @@ const CreateAnimal = ({ setPage, setIsLogged }) => {
 					if (!form.name || !form.raca || !form.genero) {
 						alert("Preencha todos os campos");
 					} else {
-						fetch("http://localhost:8000/api/animals/" + userId, {
+						fetch(`${linkNgrok}/api/animals/${userId}`, {
 							method: "POST",
 							headers: {
 								Accept: "application/json",
@@ -55,7 +56,6 @@ const CreateAnimal = ({ setPage, setIsLogged }) => {
 						})
 							.then((res) => {
 								alert("Pet criado com sucesso!");
-								window.location.reload();
 								return res.json();
 							})
 							.catch((err) => {

@@ -55,7 +55,7 @@ class UsuarioCreate(UsuarioBase):
     senha: str
 
 class UsuarioLogin(BaseModel):
-    login: str
+    email: str
     senha: str
 
 class animalFavoritoInDb(BaseModel):

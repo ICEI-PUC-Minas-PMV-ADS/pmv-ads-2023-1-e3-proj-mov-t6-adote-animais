@@ -54,8 +54,7 @@ const RegisterForm = ({ setPage, setIsLogged }) => {
           } else if (!isEmailValid(form.email)) {
             alert("Preencha um email válido");
           } else {
-            createUser(form)
-            setIsLogged(true);
+            createUser(form, setIsLogged);
           }
         }}
       >

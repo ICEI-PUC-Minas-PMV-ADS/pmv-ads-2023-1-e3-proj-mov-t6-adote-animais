@@ -2,6 +2,7 @@ import * as React from "react";
 import { FlatList } from "react-native";
 import { List, IconButton, DefaultTheme } from "react-native-paper";
 import { useState, useEffect } from "react";
+import { linkNgrok } from "../services/adotePetApi";
 
 const PetsFav = () => {
 	const [isLoading, setLoading] = useState(true);
@@ -10,11 +11,10 @@ const PetsFav = () => {
 
 	const getData = async () => {
 		try {
-			fetch("http://localhost:8000/api/favorito/" + userId)
+			fetch(`${linkNgrok}/api/favorito/${userId}`)
 				.then((response) => response.json())
 				.then((data) => {
 					setData(data);
-					// console.log(data);
 				});
 		} catch (error) {
 			alert("Oops algo deu errado, tente novamente mais tarde");

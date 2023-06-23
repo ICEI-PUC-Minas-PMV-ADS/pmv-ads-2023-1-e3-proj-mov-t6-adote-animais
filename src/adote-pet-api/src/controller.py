@@ -1,8 +1,11 @@
-from database import db, db_state_default
-from fastapi import Depends, APIRouter, HTTPException
-from schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate, UsuarioLogin, animalFavoritoInDb
 from typing import List
-import repository
+
+from fastapi import Depends, APIRouter, HTTPException
+
+from . import repository
+from .database import db, db_state_default
+from .schemas import AnimalInDb, AnimalCreate, UsuarioInDb, UsuarioCreate, UsuarioLogin, animalFavoritoInDb
+
 
 async def reset_db_state():
     db._state._state.set(db_state_default.copy())
@@ -16,6 +19,7 @@ def get_db(db_state=Depends(reset_db_state)):
     finally:
         if not db.is_closed():
             db.close()
+
 
 router = APIRouter(prefix="/api")
 
@@ -43,7 +47,7 @@ def create_user(user: UsuarioCreate):
 
 @router.post("/login", response_model=UsuarioInDb,dependencies=[Depends(get_db)])
 def login_user(user: UsuarioLogin):
-    login_do_usuario = repository.get_user_by_login(user.login)
+    login_do_usuario = repository.get_user_by_email(user.email)
     if(login_do_usuario == None):
         raise HTTPException(status_code=404, detail="Usuario não existe.")
     if(login_do_usuario.senha != user.senha):

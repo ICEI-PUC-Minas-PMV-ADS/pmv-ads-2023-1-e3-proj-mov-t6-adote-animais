@@ -1,13 +1,14 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-import database, models
-from database import db_state_default
-from controller import router
+
+from . import models
+from .controller import router
+from .database import db
 
 
-database.db.connect()
-database.db.create_tables([models.Usuario, models.Animal, models.AnimalFavorito])
-database.db.close()
+db.connect()
+db.create_tables([models.Usuario, models.Animal, models.AnimalFavorito])
+db.close()
 
 app = FastAPI()
 

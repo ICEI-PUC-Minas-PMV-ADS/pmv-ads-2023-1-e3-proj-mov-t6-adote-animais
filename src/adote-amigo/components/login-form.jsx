@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Button, TextInput, DefaultTheme } from "react-native-paper";
+import { login } from "../services/adotePetApi";
 import Logo from "./logo";
 
 const LoginForm = ({ setPage, setIsLogged }) => {
@@ -45,9 +46,9 @@ const LoginForm = ({ setPage, setIsLogged }) => {
           if (!form.email || !form.password) {
             alert("Preencha todos os campos");
           } else if (!isEmailValid(form.email)) {
-            alert("Email inválido");
+            alert("Email inválido!");
           } else {
-            setIsLogged(true);
+            login(form, setIsLogged);
           }
         }}
       >

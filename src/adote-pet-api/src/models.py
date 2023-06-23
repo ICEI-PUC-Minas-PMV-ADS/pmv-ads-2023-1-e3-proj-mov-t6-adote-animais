@@ -1,7 +1,8 @@
+from datetime import datetime
+
 import peewee
 
-from database import db
-from datetime import datetime
+from .database import db
 
 class BaseModel(peewee.Model):
     class Meta:
