@@ -1,0 +1,20 @@
+message: Please cite this software using these metadata.
+title: Adote Animais
+authors:
+  - family-names: Marinho Ferreira
+    given-names: Marcus Vinicius
+  - family-names: Eufrasio Cacholi
+    given-names: Amanda
+  - family-names: Martins Xavier
+    given-names: Gabriel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva Caldeira Rocha
+    given-names: Diego
+keywords:
+  - Veterinária
+  - Animais
+  - Gestão
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-adote-animais
+version: 1.0.0
+date-released: 2022-06-23
